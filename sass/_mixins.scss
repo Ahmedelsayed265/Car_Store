@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+//light
+$background: #f5f5f5;
+$blue: #227cfd;
+$box: #ffffff;
+$lightBlack: #222;
+$black: #000000;
+$ion: #555555;
+$green: #8de02c;
+$yellow: #f9ca3f;
+$red: #f00;
+$Blue: #1795ce;
+$border: 1px solid rgba(0, 0, 0, 0.1);
+$shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+//dark
+$D_blue: #1f263c;
+$D_links: #eeeff1;
+$D_icons: #8490aa;
+$D_body: #15192a;
+
+@mixin centerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin circleFrame {
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #f00;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@mixin circlePhoto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@mixin clearInput {
+  border: none;
+  background: none;
+  outline: none;
+}
+@mixin status {
+  padding: 2px 4px;
+  color: $box;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
